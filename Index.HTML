@@ -1,0 +1,111 @@
+1. Product Name: Kaju Katli  
+   Flavor: Premium Cashew  
+   Price: ₹599  
+   Image: (तू फोटो अपलोड कर किंवा सांग मी टाकतो)
+
+2. Product Name: Besan Ladoo  
+   Flavor: Desi Ghee  
+   Price: ₹349  
+   Image: (Upload किंवा सांग)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pure Swaad | Premium Sweets</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+      margin: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    h1 {
+      color: #d32f2f;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #388e3c;
+      margin-bottom: 10px;
+    }
+    .info {
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    button {
+      background-color: #ff5722;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #e64a19;
+    }
+    .upi-link {
+      font-size: 15px;
+      margin-top: 10px;
+      color: #0d47a1;
+    }
+    .upi-link a {
+      color: #0d47a1;
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://i.ibb.co/3kxJXwq/kaju-katli-premium.jpg" alt="Premium Kaju Katli">
+    <h1>Kaju Katli</h1>
+    <p class="info">Flavor: Premium Cashew Delight</p>
+    <p class="price">₹599 / 500g</p>
+    <p class="info">✅ Cash on Delivery Available</p>
+    <p class="info">🚚 Delivery: 1 Day in Sambhaji Nagar, 2–7 Days in India</p>
+    <button onclick="orderNow()">Buy Now</button>
+    <p class="upi-link">💸 Or <a href="upi://pay?pa=9359721377@upi&pn=Pure%20Swaad&cu=INR">Click here to pay via GPay / PhonePe</a></p>
+    <footer>
+      📞 Call: <strong>8793560351</strong><br>
+      📲 UPI ID: <strong>9359721377@upi</strong>
+    </footer>
+  </div>
+
+  <script>
+    function orderNow() {
+      alert(
+        "🎉 Thanks for ordering Kaju Katli!\n\n" +
+        "💰 Price: ₹599 (500g)\n" +
+        "🧾 Payment: Cash on Delivery or UPI\n" +
+        "🚚 Delivery:\n• 1 Day in Sambhaji Nagar\n• 2–7 Days elsewhere in India\n\n" +
+        "📞 Call us: 8793560351\n📲 UPI ID: 9359721377@upi"
+      );
+    }
+  </script>
+
+</body>
+</html>

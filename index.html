@@ -1,83 +1,102 @@
 <!DOCTYPE html>
-<html lang="mr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pure Swaad - मिठाई स्टोअर</title>
+  <title>Pure Swaad - Premium Sweets Online</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fffdf7;
+      background: #fdfdfd;
       margin: 0;
       padding: 20px;
+      color: #333;
     }
     h1 {
       text-align: center;
       color: #d2691e;
+      margin-bottom: 30px;
     }
-    .product {
+    .product-card {
       max-width: 400px;
-      margin: 20px auto;
+      margin: 0 auto 30px;
       border: 1px solid #ccc;
       border-radius: 10px;
+      box-shadow: 0 0 10px #eee;
+      background: #fff;
       overflow: hidden;
-      box-shadow: 0 0 10px #ddd;
-      background-color: #fff;
-      padding: 10px;
     }
-    .product img {
+    .product-card img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
     }
-    .info {
-      padding: 10px;
+    .product-details {
+      padding: 15px;
     }
-    .info h2 {
-      margin: 10px 0 5px;
+    .product-details h2 {
       font-size: 20px;
-      color: #333;
+      margin: 0 0 10px;
+      color: #222;
     }
-    .info p {
+    .product-details p {
       margin: 5px 0;
-      color: #555;
+      font-size: 16px;
     }
-    .btn {
+    .buy-btn {
       display: block;
-      text-align: center;
-      background-color: green;
+      width: 100%;
+      background: #28a745;
       color: white;
-      padding: 10px;
+      text-align: center;
+      padding: 12px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
       text-decoration: none;
       margin-top: 10px;
-      border-radius: 5px;
     }
-    .payment {
-      text-align: center;
-      margin-top: 30px;
-      background: #fef4dc;
+    .section-box {
+      background: #fff8e1;
       padding: 15px;
       border-radius: 10px;
+      margin: 20px auto;
+      max-width: 400px;
+      font-size: 15px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Pure Swaad मध्ये आपले स्वागत!</h1>
+  <h1>🍬 Pure Swaad - Premium Sweets Online</h1>
 
-  <div class="product">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Kaju_Katli.jpg" alt="काजू कतली" />
-    <div class="info">
-      <h2>🍬 काजू कतली</h2>
-      <p>500g - ₹500</p>
-      <a class="btn" href="https://wa.me/918793560351?text=मी%20काजू%20कतली%20ऑर्डर%20करू%20इच्छितो.">WhatsApp वर ऑर्डर करा</a>
+  <div class="product-card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Kaju_Katli.jpg" alt="Kaju Katli">
+    <div class="product-details">
+      <h2>Kaju Katli</h2>
+      <p>Flavor: Pure Cashew</p>
+      <p>Price: ₹500 / 500gm</p>
+      <a class="buy-btn" href="https://wa.me/918793560351?text=Hi!%20I%20want%20to%20order%20Kaju%20Katli%20(₹500%20-%20500gm).%20My%20name%20is%20_____%20and%20my%20address%20is%20_____.">Buy Now via WhatsApp</a>
     </div>
   </div>
 
-  <div class="payment">
-    <h3>💳 पेमेंट माहिती:</h3>
-    <p><strong>PhonePe / Google Pay:</strong> 919359721377</p>
-    <p>QR कोडसाठी WhatsApp वर संपर्क करा</p>
+  <div class="section-box">
+    🚚 <strong>Delivery Information:</strong><br>
+    • Aurangabad: 1 Day<br>
+    • Maharashtra (other cities): 2-3 Days<br>
+    • Rest of India: 5-7 Days<br>
+    • Cash on Delivery (COD) Available ✅
+  </div>
+
+  <div class="section-box">
+    💳 <strong>Payment Details:</strong><br>
+    • Google Pay / PhonePe Number: <strong>9359721377</strong><br>
+    • Contact on WhatsApp for QR Code
+  </div>
+
+  <div class="section-box">
+    📞 <strong>Customer Support:</strong><br>
+    For order inquiries, call or WhatsApp:<br>
+    <strong>+91 8793560351</strong>
   </div>
 
 </body>

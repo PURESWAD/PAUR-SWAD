@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pure Swaad - ऑर्डर पेज</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      color: #d2691e;
+    }
+    .product {
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      max-width: 400px;
+      background-color: #fff;
+    }
+    img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    .form-section {
+      margin-top: 20px;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      background-color: green;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .payment-info {
+      background-color: #fef4dc;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pure Swaad मध्ये आपले स्वागत आहे!</h1>
+
+  <div class="product">
+    <h2>🍬 काजू कतली</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Kaju_Katli.jpg" alt="काजू कतली" />
+    <p>शुद्ध काजूपासून तयार. किंमत: ₹500 / 500gm</p>
+
+    <div class="form-section">
+      <form id="orderForm">
+        <label>तुमचं नाव:</label>
+        <input type="text" id="name" required />
+
+        <label>मोबाईल नंबर:</label>
+        <input type="tel" id="phone" required />
+
+        <label>पत्ता:</label>
+        <textarea id="address" required></textarea>
+
+        <a class="btn" href="#" onclick="submitOrder()">WhatsApp वर ऑर्डर करा</a>
+      </form>
+    </div>
+
+    <div class="payment-info">
+      <h3>💳 पेमेंट माहिती:</h3>
+      <p><strong>PhonePe / Google Pay:</strong> 919359721377</p>
+      <p>QR कोडसाठी WhatsApp वर संपर्क करा</p>
+    </div>
+  </div>
+
+  <script>
+    function submitOrder() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const address = document.getElementById("address").value;
+
+      if (!name || !phone || !address) {
+        alert("सर्व माहिती भरा.");
+        return;
+      }
+
+      const message = `*🛒 PURE SWAAD Order*\n\n👤 नाव: ${name}\n📞 नंबर: ${phone}\n🏠 पत्ता: ${address}\n\nप्रोडक्ट: काजू कतली\nकिंमत: ₹500`;
+
+      const whatsappURL = `https://wa.me/918793560351?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>
